@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj": {}
+    "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj": {
+    "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj",
+        "projectUniqueName": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj",
         "projectName": "ModelAPIProject.Domain",
-        "projectPath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj",
+        "projectPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj",
         "packagesPath": "C:\\Users\\Josiane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\obj\\",
+        "outputPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

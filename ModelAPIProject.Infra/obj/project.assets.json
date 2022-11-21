@@ -5866,8 +5866,8 @@
     },
     "ModelAPIProject.Domain/1.0.0": {
       "type": "project",
-      "path": "../TokenAPI.Domain/ModelAPIProject.Domain.csproj",
-      "msbuildProject": "../TokenAPI.Domain/ModelAPIProject.Domain.csproj"
+      "path": "../ModelAPIProject.Domain/ModelAPIProject.Domain.csproj",
+      "msbuildProject": "../ModelAPIProject.Domain/ModelAPIProject.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5888,11 +5888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Infra\\ModelAPIProject.Infra.csproj",
+      "projectUniqueName": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Infra\\ModelAPIProject.Infra.csproj",
       "projectName": "ModelAPIProject.Infra",
-      "projectPath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Infra\\ModelAPIProject.Infra.csproj",
+      "projectPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Infra\\ModelAPIProject.Infra.csproj",
       "packagesPath": "C:\\Users\\Josiane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Infra\\obj\\",
+      "outputPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5914,8 +5914,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj": {
-              "projectPath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Domain\\ModelAPIProject.Domain.csproj"
+            "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj": {
+              "projectPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj"
             }
           }
         }

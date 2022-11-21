@@ -17,3 +17,22 @@ C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Infra\obj\Debug\net6.0\refint\Mo
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.pdb
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.genruntimeconfig.cache
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Infra\obj\Debug\net6.0\ref\ModelAPIProject.Infra.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\appsettings.Development.json
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\appsettings.json
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Infra.deps.json
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Infra.runtimeconfig.json
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Infra.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Infra.pdb
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Domain.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\bin\Debug\net6.0\ModelAPIProject.Domain.pdb
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.csproj.AssemblyReference.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.GeneratedMSBuildEditorConfig.editorconfig
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.AssemblyInfoInputs.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.AssemblyInfo.cs
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.csproj.CoreCompileInputs.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.csproj.CopyComplete
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\refint\ModelAPIProject.Infra.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.pdb
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ModelAPIProject.Infra.genruntimeconfig.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Infra\obj\Debug\net6.0\ref\ModelAPIProject.Infra.dll

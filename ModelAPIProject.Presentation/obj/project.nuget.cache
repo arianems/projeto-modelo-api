@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DAleQ8wjy5L9KzSPuLWtZUJtrqYiBhDgJsXifqxal2a1bQsCpezF0zQDSFMWrU7vf7nd5AXYKX8VzGHUT4F7dg==",
+  "dgSpecHash": "qTcXYWVn4fKTRQVgBZRZYlyzTMy4KEoupRdi/KNE8MGiwTOkKe6q95SQKSUhlQsUNLzo3RrHTYvX6qpA+q5QZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Josiane\\source\\repos\\TokenAPI\\TokenAPI.Presentation\\ModelAPIProject.Presentation.csproj",
+  "projectFilePath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Presentation\\ModelAPIProject.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Josiane\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Josiane\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

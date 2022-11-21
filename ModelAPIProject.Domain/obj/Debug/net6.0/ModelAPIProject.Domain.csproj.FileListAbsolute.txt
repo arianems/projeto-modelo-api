@@ -10,3 +10,15 @@ C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\ModelAPI
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\refint\ModelAPIProject.Domain.dll
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.pdb
 C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\ref\ModelAPIProject.Domain.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\bin\Debug\net6.0\ModelAPIProject.Domain.deps.json
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\bin\Debug\net6.0\ModelAPIProject.Domain.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\bin\Debug\net6.0\ModelAPIProject.Domain.pdb
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.csproj.AssemblyReference.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.AssemblyInfoInputs.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.AssemblyInfo.cs
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.csproj.CoreCompileInputs.cache
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\refint\ModelAPIProject.Domain.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ModelAPIProject.Domain.pdb
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Domain\obj\Debug\net6.0\ref\ModelAPIProject.Domain.dll

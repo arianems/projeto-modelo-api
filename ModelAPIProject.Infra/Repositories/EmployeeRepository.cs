@@ -34,17 +34,5 @@ namespace TokenAPI.Infra.Repositories
                 .FirstOrDefaultAsync(e => e.Email.Address == email);
             return result;
         }
-
-        /*
-
-        public override async Task<IEnumerable<Employee>> GetAll()
-        {
-            var result = await _context.Employees
-                .Include(e => e.Department)
-                .ToListAsync();
-
-            return result;
-        }
-        */
     }
 }

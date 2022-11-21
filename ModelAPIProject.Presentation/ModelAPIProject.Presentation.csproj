@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TokenAPI.Domain\ModelAPIProject.Domain.csproj" />
-    <ProjectReference Include="..\TokenAPI.Infra\ModelAPIProject.Infra.csproj" />
+    <ProjectReference Include="..\ModelAPIProject.Domain\ModelAPIProject.Domain.csproj" />
+    <ProjectReference Include="..\ModelAPIProject.Infra\ModelAPIProject.Infra.csproj" />
   </ItemGroup>
 
 </Project>

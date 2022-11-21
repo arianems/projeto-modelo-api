@@ -25,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TokenAPI.Domain\ModelAPIProject.Domain.csproj" />
+    <ProjectReference Include="..\ModelAPIProject.Domain\ModelAPIProject.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
