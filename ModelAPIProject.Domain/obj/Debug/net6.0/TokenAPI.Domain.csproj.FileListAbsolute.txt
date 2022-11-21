@@ -1,0 +1,12 @@
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\bin\Debug\net6.0\TokenAPI.Domain.deps.json
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\bin\Debug\net6.0\TokenAPI.Domain.dll
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\bin\Debug\net6.0\TokenAPI.Domain.pdb
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.csproj.AssemblyReference.cache
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.AssemblyInfo.cs
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.dll
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\refint\TokenAPI.Domain.dll
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\TokenAPI.Domain.pdb
+C:\Users\Josiane\source\repos\TokenAPI\TokenAPI.Domain\obj\Debug\net6.0\ref\TokenAPI.Domain.dll
