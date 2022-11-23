@@ -22,8 +22,8 @@ namespace TokenAPI.Infra.Repositories
 
         public async Task<Department> GetByName(string name)
         {
-            var result = await _context.Departments.FirstOrDefaultAsync(d => d.Name == name);
-            return result;
+            return await _context.Departments.DefaultIfEmpty().FirstAsync(d => d.Name == name);
+            
         }
     }
 }

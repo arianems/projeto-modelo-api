@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelAPIProject.Domain.Value_Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TokenAPI.Domain.Value_Objects
 {
-    public class FullName
+    public class FullName : ValueObject
     {
         public string FirstName { get; private set; }
         public string? MiddleName { get; private set; }
@@ -31,6 +32,16 @@ namespace TokenAPI.Domain.Value_Objects
                 return $"{FirstName} {MiddleName} {Surname}";
             else
                 return $"{FirstName} {Surname}";
+        }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            yield return FirstName;
+
+            if (MiddleName != null) yield return MiddleName;
+
+            yield return Surname;
+
         }
     }
 }

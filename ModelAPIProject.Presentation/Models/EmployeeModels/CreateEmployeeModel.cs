@@ -23,11 +23,6 @@ namespace TokenAPI.Presentation.Models.EmployeeModels
         public DateTime DateOfBirth { get; set; }
         public DateTime DateOfAdmission { get; set; }
 
-        [Required(ErrorMessage = "A valid email address must be provided.")]
-        [EmailAddress(ErrorMessage = "Please provide a valid email address.")]
-        [MaxLength(90, ErrorMessage = "The employee's email can have up to {1} characters.")]
-        public string Email { get; set; } = string.Empty;
-
         [Required(ErrorMessage = "Please inform the employee's Department ID.")]
         public Guid DepartmentID { get; set; }
     }

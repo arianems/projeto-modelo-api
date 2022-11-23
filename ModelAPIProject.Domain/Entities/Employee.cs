@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelAPIProject.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,19 +14,20 @@ namespace TokenAPI.Domain.Entities
         public FullName Name { get; set; } = null!;
         public DateTime DateOfBirth { get; set; }
         public DateTime DateOfAdmission { get; set; }
-        public Email Email { get; set; } = null!;
-
         public Guid DepartmentID { get; set; }
-        public Department Department { get; set; } = null!;
 
+        #region Navigation properties
+        public Department Department { get; set; } = null!;
+        public User? User { get; set; }
+
+        #endregion
         public Employee() { }
-        public Employee(Guid id, FullName name, DateTime dateOfBirth, DateTime dateOfAdmission, Email email, Guid departmentId)
+        public Employee(Guid id, FullName name, DateTime dateOfBirth, DateTime dateOfAdmission, Guid departmentId, Guid? userID)
         {
             Id = id;
             Name = name;
             DateOfBirth = dateOfBirth;
             DateOfAdmission = dateOfAdmission;
-            Email = email;
             DepartmentID = departmentId;
         }
     }

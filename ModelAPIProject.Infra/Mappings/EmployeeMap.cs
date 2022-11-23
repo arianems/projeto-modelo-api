@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using ModelAPIProject.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,16 +34,11 @@ namespace TokenAPI.Infra.Mappings
                 .WithMany(d => d.Employees)
                 .HasForeignKey(e => e.DepartmentID);
 
-            builder.Navigation(e => e.Department).AutoInclude();
+            builder.HasOne(e => e.User)
+                .WithOne(u => u.Employee);
+                //.HasForeignKey(typeof(User));
 
-            builder.OwnsOne(e => e.Email, y =>
-            {
-                y.Property(x => x.Address).HasColumnName("Email")
-                .IsRequired()
-                .HasMaxLength(90);
-
-                y.HasIndex(y => y.Address);
-            });
+            //builder.Navigation(e => e.Department).AutoInclude();
 
             builder.OwnsOne(e => e.Name, n =>
             {

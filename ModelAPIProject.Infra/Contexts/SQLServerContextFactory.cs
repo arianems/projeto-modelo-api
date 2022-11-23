@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace TokenAPI.Infra.Contexts
 {
+    /*
     public class SQLServerContextFactory : IDesignTimeDbContextFactory<SQLServerContext>
     {
         /// <summary>
@@ -44,4 +45,5 @@ namespace TokenAPI.Infra.Contexts
             #endregion
         }
     }
+    */
 }

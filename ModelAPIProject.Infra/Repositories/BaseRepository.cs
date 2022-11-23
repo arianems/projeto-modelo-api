@@ -43,8 +43,7 @@ namespace TokenAPI.Infra.Repositories
 
         public virtual async Task<T> GetById(Guid id) 
         {
-            var result = await _context.Set<T>().FindAsync(id);
-            return result;
+            return await _context.Set<T>().FindAsync(id) ?? await new ValueTask<T>();
         }
 
         public async Task Update(T obj)

@@ -27,12 +27,5 @@ namespace TokenAPI.Infra.Repositories
 
             return result;
         }
-
-        public async Task<Employee> GetByEmail(string email)
-        {
-            var result = await _context.Employees
-                .FirstOrDefaultAsync(e => e.Email.Address == email);
-            return result;
-        }
     }
 }

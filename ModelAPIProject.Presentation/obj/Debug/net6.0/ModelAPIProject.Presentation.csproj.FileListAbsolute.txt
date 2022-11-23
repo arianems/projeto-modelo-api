@@ -132,7 +132,6 @@ D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\o
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.AssemblyInfoInputs.cache
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.AssemblyInfo.cs
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.csproj.CoreCompileInputs.cache
-D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.MvcApplicationPartsAssemblyInfo.cs
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.MvcApplicationPartsAssemblyInfo.cache
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.ModelAPIProject.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\staticwebassets\msbuild.build.ModelAPIProject.Presentation.props
@@ -148,3 +147,5 @@ D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\o
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.pdb
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.genruntimeconfig.cache
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ref\ModelAPIProject.Presentation.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.MvcApplicationPartsAssemblyInfo.cs

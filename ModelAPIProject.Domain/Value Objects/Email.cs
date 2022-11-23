@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelAPIProject.Domain.Value_Objects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TokenAPI.Domain.Value_Objects
 {
-    public class Email
+    public class Email : ValueObject
     {
         public string Address { get; set; } = null!;
 
@@ -30,6 +31,11 @@ namespace TokenAPI.Domain.Value_Objects
             }
 
             Address = address.Trim().ToLower();
+        }
+
+        protected override IEnumerable<object> GetEqualityComponents()
+        {
+            yield return Address;
         }
     }
 }

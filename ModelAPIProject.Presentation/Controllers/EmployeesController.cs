@@ -19,34 +19,25 @@ namespace TokenAPI.Presentation.Controllers
             {
                 if (!ModelState.IsValid) return BadRequest(ModelState.Values);
 
-                if(await repository.GetByEmail(model.Email) != null)
+                var employee = new Employee
                 {
-                    return BadRequest(new { Message = "The provided email is already in use." });
-                }
-                else
-                {
-                    var employee = new Employee
-                    {
-                        Id = Guid.NewGuid(),
-                        Name = new FullName(model.Name, model.MiddleName, model.Surname),
-                        DateOfAdmission = model.DateOfAdmission,
-                        DateOfBirth = model.DateOfBirth,
-                        Email = new Email(model.Email),
-                        DepartmentID = model.DepartmentID
-                    };
+                    Id = Guid.NewGuid(),
+                    Name = new FullName(model.Name, model.MiddleName, model.Surname),
+                    DateOfAdmission = model.DateOfAdmission,
+                    DateOfBirth = model.DateOfBirth,
+                    DepartmentID = model.DepartmentID
+                };
 
-                    await repository.Create(employee);
-                    
+                await repository.Create(employee);
 
-                    return CreatedAtAction(nameof(GetById), new { employee.Id }, employee);
-                }
-
-                    
+                return CreatedAtAction(nameof(GetById), new { employee.Id }, employee);
             }
+
             catch (Exception e)
             {
                 return StatusCode(500, e.Message);
             }
+
         }
 
         [HttpDelete("id")]
@@ -77,7 +68,7 @@ namespace TokenAPI.Presentation.Controllers
 
                 var result = await repository.GetById(model.Id);
                 if (result == null) return BadRequest("No employee found. Check the ID and try again.");
-                
+
                 await repository.Update(result);
                 return Ok("Employee successfully updated.");
             }

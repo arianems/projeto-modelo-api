@@ -22,6 +22,28 @@ namespace TokenAPI.Infra.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("ModelAPIProject.Domain.Entities.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("EmployeeID")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeID")
+                        .IsUnique();
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("TokenAPI.Domain.Entities.Department", b =>
                 {
                     b.Property<Guid>("Id")
@@ -36,13 +58,6 @@ namespace TokenAPI.Infra.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departments");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("659e6ad1-13ac-4c3a-a7b7-db810d20f990"),
-                            Name = "Human Resources"
-                        });
                 });
 
             modelBuilder.Entity("TokenAPI.Domain.Entities.Employee", b =>
@@ -67,17 +82,17 @@ namespace TokenAPI.Infra.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("TokenAPI.Domain.Entities.Employee", b =>
+            modelBuilder.Entity("ModelAPIProject.Domain.Entities.User", b =>
                 {
-                    b.HasOne("TokenAPI.Domain.Entities.Department", "Department")
-                        .WithMany("Employees")
-                        .HasForeignKey("DepartmentID")
+                    b.HasOne("TokenAPI.Domain.Entities.Employee", "Employee")
+                        .WithOne("User")
+                        .HasForeignKey("ModelAPIProject.Domain.Entities.User", "EmployeeID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.OwnsOne("TokenAPI.Domain.Value_Objects.Email", "Email", b1 =>
                         {
-                            b1.Property<Guid>("EmployeeId")
+                            b1.Property<Guid>("UserId")
                                 .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("Address")
@@ -86,15 +101,27 @@ namespace TokenAPI.Infra.Migrations
                                 .HasColumnType("nvarchar(90)")
                                 .HasColumnName("Email");
 
-                            b1.HasKey("EmployeeId");
+                            b1.HasKey("UserId");
 
-                            b1.HasIndex("Address");
-
-                            b1.ToTable("Employees");
+                            b1.ToTable("Users");
 
                             b1.WithOwner()
-                                .HasForeignKey("EmployeeId");
+                                .HasForeignKey("UserId");
                         });
+
+                    b.Navigation("Email")
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("TokenAPI.Domain.Entities.Employee", b =>
+                {
+                    b.HasOne("TokenAPI.Domain.Entities.Department", "Department")
+                        .WithMany("Employees")
+                        .HasForeignKey("DepartmentID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.OwnsOne("TokenAPI.Domain.Value_Objects.FullName", "Name", b1 =>
                         {
@@ -130,9 +157,6 @@ namespace TokenAPI.Infra.Migrations
 
                     b.Navigation("Department");
 
-                    b.Navigation("Email")
-                        .IsRequired();
-
                     b.Navigation("Name")
                         .IsRequired();
                 });
@@ -140,6 +164,11 @@ namespace TokenAPI.Infra.Migrations
             modelBuilder.Entity("TokenAPI.Domain.Entities.Department", b =>
                 {
                     b.Navigation("Employees");
+                });
+
+            modelBuilder.Entity("TokenAPI.Domain.Entities.Employee", b =>
+                {
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }
