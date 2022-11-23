@@ -15,7 +15,7 @@ namespace ModelAPIProject.Infra.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasKey(u => u.Id);
+            builder.HasKey(u => u.EmployeeID);
 
             builder.Property(u => u.Password)
                 .HasMaxLength(128)

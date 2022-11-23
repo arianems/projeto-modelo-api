@@ -10,7 +10,6 @@ namespace ModelAPIProject.Domain.Entities
 {
     public class User
     {
-        public Guid Id { get; set; }
         public Email Email { get; set; } = null!;
         public string Password { get; set; } = string.Empty;
         public Guid EmployeeID { get; set; }
@@ -18,9 +17,8 @@ namespace ModelAPIProject.Domain.Entities
 
         public User() { }
 
-        public User(Guid id, Email email, string password, Guid employeeID)
+        public User(Email email, string password, Guid employeeID)
         {
-            Id = id;
             Email = email;
             Password = password;
             EmployeeID = employeeID;
