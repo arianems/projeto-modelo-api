@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelAPIProject.Domain", "M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelAPIProject.Infra", "ModelAPIProject.Infra\ModelAPIProject.Infra.csproj", "{3E59EE01-B92F-4E83-81EA-5A0169279641}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting Layer", "4 - CrossCutting Layer", "{A07152BA-EC9F-43CF-92C8-FBB9FAC729AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelAPIProject.Cryptography", "ModelAPIProject.Cryptography\ModelAPIProject.Cryptography.csproj", "{D1AFDAFC-670A-4335-A8C2-871DB80B960E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{3E59EE01-B92F-4E83-81EA-5A0169279641}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E59EE01-B92F-4E83-81EA-5A0169279641}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E59EE01-B92F-4E83-81EA-5A0169279641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AFDAFC-670A-4335-A8C2-871DB80B960E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AFDAFC-670A-4335-A8C2-871DB80B960E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AFDAFC-670A-4335-A8C2-871DB80B960E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AFDAFC-670A-4335-A8C2-871DB80B960E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{3ECD1953-E15C-4D87-A77D-FF0817FFB6C0} = {0110A259-A86F-4532-84BE-CD064301BB57}
 		{5CF49179-8E12-42D9-A803-678BF4F51588} = {6A0DA92D-7249-493F-B0AB-1C35562D3C32}
 		{3E59EE01-B92F-4E83-81EA-5A0169279641} = {5C78B04C-D5C9-4F1A-B185-1F1C7D35B712}
+		{D1AFDAFC-670A-4335-A8C2-871DB80B960E} = {A07152BA-EC9F-43CF-92C8-FBB9FAC729AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE7C3EF8-6C0F-4E9B-A12C-45A6520A5619}

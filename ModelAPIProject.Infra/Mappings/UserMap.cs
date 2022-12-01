@@ -18,7 +18,7 @@ namespace ModelAPIProject.Infra.Mappings
             builder.HasKey(u => u.EmployeeID);
 
             builder.Property(u => u.Password)
-                .HasMaxLength(128)
+                .HasMaxLength(64)
                 .IsRequired();
 
             builder.Property(u => u.EmployeeID)

@@ -9,7 +9,7 @@ namespace ModelAPIProject.Presentation.Configurations
 {
     public class TokenSettings
     {
-        private readonly string SecretKey = string.Empty;
+        private readonly string SecretKey;
         /// <summary>
         /// Responsible for generating the tokens used by the API.
         /// </summary>
@@ -17,6 +17,9 @@ namespace ModelAPIProject.Presentation.Configurations
         /// <returns>A serialized JwtSecurity Token</returns>
         public string GenerateToken(string email)
         {
+            throw new NotImplementedException();
+
+            /*
             var tokenHandler = new JwtSecurityTokenHandler();
 
             var key = GetKey();
@@ -32,19 +35,23 @@ namespace ModelAPIProject.Presentation.Configurations
             var token = tokenHandler.CreateToken(tokenDescriptor);
 
             return tokenHandler.WriteToken(token);
+            */
         }
 
         public static byte[] GetKey()
         {
+            throw new NotImplementedException();
+
+            /*
             var configuration = new ConfigurationBuilder();
             var settings = configuration.AddJsonFile(Path.Combine(Directory.GetCurrentDirectory(), "appsettings.json"));
-            
 
-            var tokenSettings = settings.Build().GetSection("JWTSettings")
+            var tokenSettings = settings.Build().GetSection("SecretKey")
                 .Get<TokenSettings>();
 
             var key = Encoding.UTF8.GetBytes(tokenSettings.SecretKey);
             return key;
+            */
         }
     }
 }

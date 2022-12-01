@@ -149,3 +149,5 @@ D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\o
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ref\ModelAPIProject.Presentation.dll
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\obj\Debug\net6.0\ModelAPIProject.Presentation.MvcApplicationPartsAssemblyInfo.cs
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\bin\Debug\net6.0\ModelAPIProject.Cryptography.dll
+D:\COTI Web Development\Para GitHub\model-project\ModelAPIProject.Presentation\bin\Debug\net6.0\ModelAPIProject.Cryptography.pdb

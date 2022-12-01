@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "3qn5WeQiwe07py0oaEx0fRSe/NsynOQlFbGterhtdgW9VM+hiv08cQdCwsclg1R+Z8/c4zyCJ1l1B1bEnATDYQ==",
+  "success": true,
+  "projectFilePath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Cryptography\\ModelAPIProject.Cryptography.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Josiane\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Josiane\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\Josiane\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512"
+  ],
+  "logs": []
+}

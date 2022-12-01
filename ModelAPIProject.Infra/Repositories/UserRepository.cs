@@ -23,13 +23,19 @@ namespace ModelAPIProject.Infra.Repositories
         public async Task<User> GetByEmail(Email email)
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email.Address.ToUpper() == email.Address.ToUpper());
-            return user;
+            return user!;
 
+        }
+
+        public override Task<User> GetById(Guid id)
+        {
+            return _context.Users.DefaultIfEmpty().FirstAsync(u => u.EmployeeID == id)!;
         }
 
         public async Task<User> GetCredentials(Email email, string password)
         {
-            return await _context.Users.DefaultIfEmpty().FirstAsync(u => u.Email.Equals(email) && u.Password == password);
+            return await _context.Users.DefaultIfEmpty()
+                .FirstAsync(u => u.Email.Address.ToUpper() == email.Address.ToUpper() && u.Password == password);
         }
     }
 }

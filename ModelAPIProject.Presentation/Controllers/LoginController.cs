@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ModelAPIProject.Cryptography;
 using ModelAPIProject.Infra.Contracts;
 using ModelAPIProject.Presentation.Configurations;
 using ModelAPIProject.Presentation.Models.LoginModel;
@@ -17,7 +18,11 @@ namespace ModelAPIProject.Presentation.Controllers
         {
             try
             {
-                if (await repository.GetCredentials(new Email(model.Email), model.Password) == null)
+                throw new NotImplementedException();
+
+                /*
+                if (await repository.GetCredentials(new Email(model.Email), 
+                    SHA256Cryptography.Encrypt(model.Password)) == null)
                 {
                     return StatusCode(401, "Access denied. Invalid email and/or password.");
                 }
@@ -27,6 +32,7 @@ namespace ModelAPIProject.Presentation.Controllers
                     Message = "Authentication completed successfully.",
                     AccessToken = tokenSettings.GenerateToken(model.Email)
                 });
+                */
 
             }
             catch (Exception e)

@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ModelAPIProject.Cryptography\ModelAPIProject.Cryptography.csproj" />
     <ProjectReference Include="..\ModelAPIProject.Domain\ModelAPIProject.Domain.csproj" />
     <ProjectReference Include="..\ModelAPIProject.Infra\ModelAPIProject.Infra.csproj" />
   </ItemGroup>

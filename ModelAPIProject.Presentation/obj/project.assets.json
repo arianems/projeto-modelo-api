@@ -1968,6 +1968,16 @@
           }
         }
       },
+      "ModelAPIProject.Cryptography/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ModelAPIProject.Cryptography.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModelAPIProject.Cryptography.dll": {}
+        }
+      },
       "ModelAPIProject.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -5675,6 +5685,11 @@
         "version.txt"
       ]
     },
+    "ModelAPIProject.Cryptography/1.0.0": {
+      "type": "project",
+      "path": "../ModelAPIProject.Cryptography/ModelAPIProject.Cryptography.csproj",
+      "msbuildProject": "../ModelAPIProject.Cryptography/ModelAPIProject.Cryptography.csproj"
+    },
     "ModelAPIProject.Domain/1.0.0": {
       "type": "project",
       "path": "../ModelAPIProject.Domain/ModelAPIProject.Domain.csproj",
@@ -5692,6 +5707,7 @@
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
+      "ModelAPIProject.Cryptography >= 1.0.0",
       "ModelAPIProject.Domain >= 1.0.0",
       "ModelAPIProject.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.0.0"
@@ -5730,6 +5746,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Cryptography\\ModelAPIProject.Cryptography.csproj": {
+              "projectPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Cryptography\\ModelAPIProject.Cryptography.csproj"
+            },
             "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj": {
               "projectPath": "D:\\COTI Web Development\\Para GitHub\\model-project\\ModelAPIProject.Domain\\ModelAPIProject.Domain.csproj"
             },

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ModelAPIProject.Cryptography;
 using ModelAPIProject.Domain.Entities;
 using ModelAPIProject.Infra.Contracts;
 using ModelAPIProject.Presentation.Models.UserModels;
@@ -29,13 +30,12 @@ namespace ModelAPIProject.Presentation.Controllers
                 {
                     var result = await userRepository.Create(new User
                     {
-                        Id = Guid.NewGuid(),
                         Email = new Email(model.Email),
-                        Password = model.Password,
+                        Password = SHA256Cryptography.Encrypt(model.Password),
                         EmployeeID = model.EmployeeID
                     });
 
-                    return CreatedAtAction(nameof(GetById), new { result.Id }, result);
+                    return CreatedAtAction(nameof(GetById), new { Id = result.EmployeeID }, result);
                 }
                 else
                 {
@@ -77,12 +77,9 @@ namespace ModelAPIProject.Presentation.Controllers
 
             await repository.Update(new User
             {
-                Id = model.Id,
                 Email = new Email(model.Email),
-                Password = model.Password
+                Password = SHA256Cryptography.Encrypt(model.Password)
             });
-
-
 
             return Ok(result);
         }

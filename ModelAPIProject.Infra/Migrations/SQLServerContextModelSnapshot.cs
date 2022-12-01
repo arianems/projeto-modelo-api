@@ -24,22 +24,15 @@ namespace TokenAPI.Infra.Migrations
 
             modelBuilder.Entity("ModelAPIProject.Domain.Entities.User", b =>
                 {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("EmployeeID")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasMaxLength(64)
+                        .HasColumnType("nvarchar(64)");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("EmployeeID")
-                        .IsUnique();
+                    b.HasKey("EmployeeID");
 
                     b.ToTable("Users");
                 });
@@ -92,7 +85,7 @@ namespace TokenAPI.Infra.Migrations
 
                     b.OwnsOne("TokenAPI.Domain.Value_Objects.Email", "Email", b1 =>
                         {
-                            b1.Property<Guid>("UserId")
+                            b1.Property<Guid>("UserEmployeeID")
                                 .HasColumnType("uniqueidentifier");
 
                             b1.Property<string>("Address")
@@ -101,12 +94,12 @@ namespace TokenAPI.Infra.Migrations
                                 .HasColumnType("nvarchar(90)")
                                 .HasColumnName("Email");
 
-                            b1.HasKey("UserId");
+                            b1.HasKey("UserEmployeeID");
 
                             b1.ToTable("Users");
 
                             b1.WithOwner()
-                                .HasForeignKey("UserId");
+                                .HasForeignKey("UserEmployeeID");
                         });
 
                     b.Navigation("Email")
